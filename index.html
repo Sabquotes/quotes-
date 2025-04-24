@@ -1,132 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="RiseUnstoppable - Life Changing Quotes and Articles"/>
   <title>RiseUnstoppable</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
-  <!-- Visitor Counter -->
-  <script async src="https://cdn.counter.dev/script.js" data-id="YOUR_UNIQUE_ID" data-utcoffset="5.5"></script>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA4-486669554"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GA4-486669554');
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   <style>
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-      color: white;
-      text-align: center;
-      padding-bottom: 50px;
-    }
-
-    header {
-      padding: 40px 20px;
-    }
-
-    h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 48px;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
+      background-size: cover;
       color: #fff;
-      text-shadow: 2px 2px 8px #ff6600;
-      animation: riseUp 2s ease-out;
     }
-
-    @keyframes riseUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+    header {
+      text-align: center;
+      padding: 30px 10px;
+      background-color: rgba(0, 0, 0, 0.7);
     }
-
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3em;
+      color: #00f5d4;
+      margin-bottom: 10px;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    nav a {
+      color: #00f5d4;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
     .quote-box {
-      background: rgba(255, 255, 255, 0.05);
+      max-width: 800px;
       margin: 20px auto;
       padding: 20px;
-      width: 90%;
-      max-width: 700px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      background-color: rgba(0,0,0,0.6);
+      border-left: 5px solid #00f5d4;
+      border-radius: 8px;
     }
-
     .quote-box p {
-      font-size: 18px;
+      font-size: 1.2em;
       line-height: 1.6;
     }
-
-    form {
-      margin-top: 40px;
-      background: rgba(255, 255, 255, 0.08);
-      padding: 20px;
+    .contact-form {
+      max-width: 600px;
+      margin: 40px auto;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 30px;
       border-radius: 10px;
-      display: inline-block;
-      text-align: left;
     }
-
-    input, textarea {
+    .contact-form input,
+    .contact-form textarea {
       width: 100%;
       padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
+      margin-bottom: 15px;
       border: none;
+      border-radius: 5px;
     }
-
-    button {
+    .contact-form button {
+      background: #00f5d4;
+      color: #000;
       padding: 10px 20px;
-      background-color: #ff6600;
-      border: none;
-      color: white;
       font-weight: bold;
-      cursor: pointer;
+      border: none;
       border-radius: 5px;
     }
-
     footer {
-      margin-top: 50px;
-      font-size: 14px;
-      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Rise<span style="color: #ff6600;">Unstoppable</span></h1>
-    <p>Never Give Up - Inspire the World</p>
+  <header class="animate__animated animate__fadeInDown">
+    <h1>RiseUnstoppable</h1>
+    <p>Never Give Up. Inspire. Rise Again.</p>
   </header>
 
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Quotes</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
   <!-- Quotes Section -->
-  <div class="quote-box"><p>1. "अपने आप को साबित करने के लिए पूरी जिंदगी पड़ी है।"<br>“You have your whole life to prove yourself.”</p></div>
-  <div class="quote-box"><p>2. "कभी हार मत मानो, क्योंकि शुरुआत हमेशा सबसे मुश्किल होती है।"<br>“Never give up because beginnings are always the hardest.”</p></div>
-  <div class="quote-box"><p>3. "सपने वो नहीं जो सोते वक्त आएं, सपने वो हैं जो नींद ही ना आने दें।"<br>“Dreams aren’t what you see in sleep, dreams are what don’t let you sleep.”</p></div>
-  <div class="quote-box"><p>4. "असफलता सफलता की पहली सीढ़ी है।"<br>“Failure is the first step toward success.”</p></div>
-  <div class="quote-box"><p>5. "जो आग तुम्हारे अंदर है, उसे कभी बुझने मत देना।"<br>“Never let the fire inside you die.”</p></div>
-  <div class="quote-box"><p>6. "इंतजार मत करो, वक्त कभी सही नहीं होता।"<br>“Don’t wait. The time is never just right.”</p></div>
-  <div class="quote-box"><p>7. "हर दिन एक नया मौका है।"<br>“Every day is a new opportunity.”</p></div>
-  <div class="quote-box"><p>8. "किस्मत नहीं मेहनत बदलती है जिंदगी।"<br>“Not luck, hard work changes life.”</p></div>
-  <div class="quote-box"><p>9. "जो सोचते हैं वो कर सकते हैं।"<br>“Those who believe, achieve.”</p></div>
-  <div class="quote-box"><p>10. "जो खुद पर विश्वास करता है, वही सफल होता है।"<br>“Only those who believe in themselves succeed.”</p></div>
+  <section>
+    <div class="quote-box animate__animated animate__fadeInUp">
+      <p>"जो अपने इरादों में दम रखते हैं, वही दुनिया को बदलते हैं."<br><i>— Those who have determination change the world.</i></p>
+    </div>
+    <div class="quote-box animate__animated animate__fadeInUp">
+      <p>"सपनों को हकीकत में बदलना है, तो नींद छोड़नी होगी."<br><i>— To turn dreams into reality, you must wake up and work.</i></p>
+    </div>
+    <div class="quote-box animate__animated animate__fadeInUp">
+      <p>"हर हार एक सबक है, जो आगे की जीत की तैयारी कराती है."<br><i>— Every loss teaches a lesson for future victories.</i></p>
+    </div>
+    <!-- Add more quotes here the same way -->
+  </section>
 
   <!-- Contact Form -->
-  <form action="https://formspree.io/f/your_form_id" method="POST">
-    <h2>Contact Me</h2>
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="_replyto" placeholder="Your Email" required>
-    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
+  <section>
+    <div class="contact-form animate__animated animate__fadeInUp">
+      <h2>Contact Me</h2>
+      <form action="https://formsubmit.co/saurabhpatel8920@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 RiseUnstoppable | Designed by Sab</p>
+    © 2025 RiseUnstoppable | All Rights Reserved
   </footer>
 
 </body>
 </html>
-
-
----
-
