@@ -3,6 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RiseUnstoppable - Articles and Inspirational Quotes">
+    <title>Articles | RiseUnstoppable</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Visitor Counter Script -->
+    <script>
+        if (!localStorage.getItem('visited')) {
+            localStorage.setItem('visited', 'true');
+            document.getElementById('visitor-count').innerText = parseInt(localStorage.getItem('visitor-count') || 0) + 1;
+            localStorage.setItem('visitor-count', localStorage.getItem('visitor-count') || 0);
+        }
+    </script>
+    <style>
+        body {
+            background-image: url('https://www.example.com/mona-lisa.jpg'); /* Replace with your Mona Lisa wallpaper URL */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Logo Animation */
+        .logo {
+            width: 100px;
+            margin: 0 auto;
+            animation: logoAnimation 3s ease-in-out infinite;
+        }
+
+        @keyframes logoAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .search-bar {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .visitor-count {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Animation for the header */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="rise_unstoppable_logo.png" alt="RiseUnstoppable Logo" class="logo"> <!-- Add your logo image -->
+        <h1>RiseUnstoppable - Articles</h1>
+        <input type="text" class="search-bar" placeholder="Search articles..." id="search-input" onkeyup="searchArticles()">
+    </div>
+
+    <div class="visitor-count">
+        <p>Visitor Count: <span id="visitor-count">0</span></p>
+    </div>
+
+    <div class="article-container">
+        <!-- Mona Lisa Article (Unchanged) -->
+        <div class="article" id="article-mona-lisa">
+            <h2>Mystery of Mona Lisa</h2>
+
+            <h3>English Version</h3>
+            <p>The Mona Lisa is a portrait painting by the renowned artist Leonardo da Vinci. It is known for the enigmatic smile of the subject and the use of sfumato, a technique developed by da Vinci. The painting is currently housed in the Louvre Museum in Paris, France, and has been a subject of fascination for art lovers, historians, and researchers for centuries. Its mysterious appeal and historical significance make it one of the most famous works of art in the world.</p>
+
+            <h3>Hindi Version</h3>
+            <p>मोनालिसा, प्रसिद्ध चित्रकार लियोनार्दो दा विंची द्वारा बनाई गई एक चित्रकला है। इसे विषय की रहस्यमयी मुस्कान और स्फूमैटो (sfumato) तकनीक के लिए जाना जाता है, जो दा विंची ने विकसित की थी। यह चित्र पेरिस, फ्रांस के लौवर संग्रहालय में रखा गया है, और यह कला प्रेमियों, इतिहासकारों और शोधकर्ताओं के लिए सदीों से आकर्षण का केंद्र रहा है। इसकी रहस्यमय अपील और ऐतिहासिक महत्व इसे दुनिया के सबसे प्रसिद्ध कला कार्यों में से एक बनाती है।</p>
+        </div>
+    </div>
+
+    <script>
+        function searchArticles() {
+            var input, filter, articles, articleContainer, i, txtValue;
+            input = document.getElementById('search-input');
+            filter = input.value.toUpperCase();
+            articleContainer = document.querySelector('.article-container');
+            articles = articleContainer.getElementsByClassName('article');
+
+            for (i = 0; i < articles.length; i++) {
+                txtValue = articles[i].textContent || articles[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    articles[i].style.display = "";
+                } else {
+                    articles[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mystery of Mona Lisa Part One Article">
     <title>Mystery of Mona Lisa Part One</title>
     <style>
