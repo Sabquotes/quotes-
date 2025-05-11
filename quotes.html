@@ -1,119 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RiseUnstoppable - Nature Quotes</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      backdrop-filter: brightness(0.7);
-    }
-    header {
-      text-align: center;
-      padding: 2rem;
-      background-color: rgba(0,0,0,0.5);
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    #searchBar {
-      display: block;
-      margin: 1rem auto;
-      padding: 10px;
-      width: 80%;
-      font-size: 1rem;
-      border-radius: 5px;
-      border: none;
-    }
-    .quote-list {
-      max-width: 900px;
-      margin: auto;
-      padding: 1rem;
-    }
-    .quote-box {
-      background-color: rgba(255,255,255,0.1);
-      border-left: 4px solid #00ffcc;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 10px;
-      backdrop-filter: blur(5px);
-    }
-    .quote-box:hover {
-      background-color: rgba(255,255,255,0.2);
-    }
-    .quote-box p {
-      margin: 0.2rem 0;
-    }
-    #visitor-count {
-      text-align: center;
-      margin: 2rem auto;
-      font-size: 1.2rem;
-      background-color: rgba(0,0,0,0.4);
-      padding: 10px;
-      width: fit-content;
-      border-radius: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Powerful Hindi-English Quotes to inspire you - RiseUnstoppable">
+    <title>Quotes | RiseUnstoppable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            text-align: center;
+        }
+        header img {
+            max-width: 100px;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: none;
+        }
+        .quote-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .quote {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            margin: 10px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        a.link-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            border-radius: 5px;
+            margin: 10px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Nature Quotes</h1>
-    <input type="text" id="searchBar" placeholder="Search quotes..." onkeyup="searchQuotes()"/>
-  </header>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/RiseUnstoppable_Logo.png" alt="RiseUnstoppable Logo">
+        <h1>RiseUnstoppable Quotes</h1>
+    </header><div class="search-bar">
+    <input type="text" placeholder="Search your favorite quote...">
+</div>
 
-  <div class="quote-list" id="quoteList">
-    <!-- Quotes will be injected here -->
-  </div>
+<div class="quote-container">
+    <div class="quote">
+        "Believe in yourself." <br>"खुद पर विश्वास रखो।"
+    </div>
+    <div class="quote">
+        "Never give up." <br>"कभी हार मत मानो।"
+    </div>
+    <div class="quote">
+        "Dream big, start small." <br>"बड़ा सपना देखो, छोटा शुरू करो।"
+    </div>
+    <!-- Add more quotes up to 20 or 50 here using same format -->
+</div>
 
-  <div id="visitor-count">
-    Visitor Count: <span id="counter">Loading...</span>
-  </div>
+<div style="text-align:center;">
+    <a href="quotes1.html" class="link-btn">Quotes Set 1</a>
+    <a href="quotes2.html" class="link-btn">Quotes Set 2</a>
+    <a href="quotes3.html" class="link-btn">Quotes Set 3</a>
+</div>
 
-  <script>
-    const quotes = [
-      { en: "In every walk with nature, one receives far more than he seeks.", hi: "प्रकृति के साथ हर कदम पर हमें बहुत कुछ मिलता है।" },
-      { en: "Nature does not hurry, yet everything is accomplished.", hi: "प्रकृति जल्दी नहीं करती, फिर भी सब कुछ पूरा होता है।" },
-      { en: "Look deep into nature, and then you will understand everything better.", hi: "प्रकृति में गहराई से देखो, सब कुछ बेहतर समझ में आएगा।" },
-      { en: "Adopt the pace of nature: her secret is patience.", hi: "प्रकृति की गति अपनाओ: उसका रहस्य धैर्य है।" },
-      { en: "The earth has music for those who listen.", hi: "पृथ्वी के पास संगीत है, सुनने वालों के लिए।" },
-      { en: "To walk in nature is to witness a thousand miracles.", hi: "प्रकृति में चलना हज़ार चमत्कारों का साक्षी होना है।" },
-      { en: "Nature is not a place to visit. It is home.", hi: "प्रकृति कोई घूमने की जगह नहीं, वह हमारा घर है।" },
-      { en: "Sunsets are proof that endings can be beautiful too.", hi: "सूर्यास्त इस बात का प्रमाण है कि अंत भी सुंदर हो सकते हैं।" },
-      { en: "The mountains are calling and I must go.", hi: "पहाड़ बुला रहे हैं और मुझे जाना है।" },
-      { en: "The best therapy is a walk in the forest.", hi: "सबसे अच्छी थेरेपी जंगल में एक सैर है।" },
-      // Add more below to reach 50
-    ];
+<footer>
+    <p>Visitor Count:</p>
+    <img src="https://www.cutercounter.com/hits.php?id=hxpxckq&nd=6&style=10" border="0" alt="visitor counter">
+</footer>
 
-    // Automatically load quotes
-    const container = document.getElementById("quoteList");
-    quotes.forEach(q => {
-      const div = document.createElement("div");
-      div.className = "quote-box";
-      div.innerHTML = `<p><strong>English:</strong> ${q.en}</p><p><strong>Hindi:</strong> ${q.hi}</p>`;
-      container.appendChild(div);
-    });
+<audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
 
-    function searchQuotes() {
-      const term = document.getElementById("searchBar").value.toLowerCase();
-      const boxes = document.querySelectorAll(".quote-box");
-      boxes.forEach(box => {
-        box.style.display = box.innerText.toLowerCase().includes(term) ? "block" : "none";
-      });
-    }
-
-    // Visitor Counter
-    fetch('https://api.countapi.xyz/hit/riseunstoppable/quotes')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('counter').innerText = data.value;
-      });
-  </script>
 </body>
 </html>
+
