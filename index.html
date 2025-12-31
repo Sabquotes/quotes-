@@ -1,140 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="RiseUnstoppable - Life Changing Quotes and Articles"/>
-  <title>RiseUnstoppable</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
-    header {
-      text-align: center;
-      padding: 30px 10px;
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3em;
-      color: #00f5d4;
-      margin-bottom: 10px;
-    }
-    nav {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    nav a {
-      color: #00f5d4;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .quote-box {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: rgba(0,0,0,0.6);
-      border-left: 5px solid #00f5d4;
-      border-radius: 8px;
-    }
-    .quote-box p {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-    .contact-form {
-      max-width: 600px;
-      margin: 40px auto;
-      background: rgba(0, 0, 0, 0.8);
-      padding: 30px;
-      border-radius: 10px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: none;
-      border-radius: 5px;
-    }
-    .contact-form button {
-      background: #00f5d4;
-      color: #000;
-      padding: 10px 20px;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.6);
-      font-size: 0.9em;
-    }<div style="text-align: center; margin-top: 20px;">
-    <p>Visitors Count:</p>
-    <img src="https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=ip&initCount=00000" title="Visitor Counter" Alt="Visitor Counter" border="0" />
-</div>
-  </style>
+  <meta charset="UTF-8">
+  <title>RiseUnstoppable | Meaningful Content</title>
+  <meta name="description" content="Articles, stories, motivation, life rules and meaningful quotes.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="animate__animated animate__fadeInDown">
-    <h1>RiseUnstoppable</h1>
-    <p>Never Give Up. Inspire. Rise Again.</p>
-  </header>
+<header>
+  <h1>RiseUnstoppable</h1>
+  <p>Words that inspire growth, mindset & success</p>
+</header>
 
-  <nav>
-  <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; padding: 0; margin: 0;">
-    <li><a href="index.html" style="text-decoration: none; color: cyan;">Home</a></li>
-    <li><a href="about.html" style="text-decoration: none; color: cyan;">About</a></li>
-    <li><a href="quotes.html" style="text-decoration: none; color: cyan;">Quotes</a></li>
-    <li><a href="article.html" style="text-decoration: none; color: cyan;">Articles</a></li>
-    <li><a href="contact.html" style="text-decoration: none; color: cyan;">Contact</a></li>
-  </ul>
-  </nav>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#articles">Articles</a>
+  <a href="#quotes">Quotes</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <!-- Quotes Section -->
-  <section>
-    <div class="quote-box animate__animated animate__fadeInUp">
-      <p>"जो अपने इरादों में दम रखते हैं, वही दुनिया को बदलते हैं."<br><i>— Those who have determination change the world.</i></p>
-    </div>
-    <div class="quote-box animate__animated animate__fadeInUp">
-      <p>"सपनों को हकीकत में बदलना है, तो नींद छोड़नी होगी."<br><i>— To turn dreams into reality, you must wake up and work.</i></p>
-    </div>
-    <div class="quote-box animate__animated animate__fadeInUp">
-      <p>"हर हार एक सबक है, जो आगे की जीत की तैयारी कराती है."<br><i>— Every loss teaches a lesson for future victories.</i></p>
-    </div>
-    <!-- Add more quotes here the same way -->
-  </section>
+<section id="home">
+  <h2>Welcome</h2>
+  <p>I write meaningful articles, stories, motivation and life success rules with depth and clarity.</p>
+</section>
 
-  <!-- Contact Form -->
-  <section>
-    <div class="contact-form animate__animated animate__fadeInUp">
-      <h2>Contact Me</h2>
-      <form action="https://formsubmit.co/saurabhpatel8920@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a research-based content writer focused on writing articles, stories,
+    motivational content and powerful quotes that create real impact.
+  </p>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    © 2025 RiseUnstoppable | All Rights Reserved
-  </footer>
+<section id="articles">
+  <h2>Articles</h2>
+  <div class="card">Why Discipline Beats Motivation</div>
+  <div class="card">The Power of Deep Thinking</div>
+  <div class="card">Life Rules That Shape Success</div>
+</section>
 
+<section id="quotes">
+  <h2>Quotes</h2>
+  <blockquote>“Discipline builds the future that motivation dreams about.”</blockquote>
+  <blockquote>“Consistency turns ordinary effort into extraordinary results.”</blockquote>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form action="https://formsubmit.co/your@email.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>Visitors: <span id="count">0</span></p>
+  <p>© 2025 RiseUnstoppable</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
