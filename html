@@ -1,0 +1,196 @@
+[1:42 PM, 12/31/2025] SAURABH PATEL: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RiseUnstoppable</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="overlay">
+    <h1 class="fade">Rise Unstoppable</h1>
+    <p class="fade-delay">
+      Meaningful articles, deep research, powerful stories & life-changing quotes
+    </p>
+
+    <div class="btn-group fade-delay">
+      <a href="#content" class="btn">Explore Content</a>
+      <a href="#contact" class="btn outline">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills">
+  <h2>What I Do</h2>
+  <div class="grid">
+    <div class="box">📘 Research-Based Writing</div>
+    <div class="box">✍️ Article & Blog Writing</div>
+    <div class="box">📖 Story Writing</div>
+    <div class="box">🔥 Motivation & Life Rules</div>
+    <div class="box">💬 Meaningful Quotes</div>
+    <div class="box">🎯 Mindset Content</div>
+  </div>
+</section>
+
+<!-- CONTENT TYPES -->
+<section id="content" class="content">
+  <h2>Content You’ll Find Here</h2>
+  <p>
+    Every piece of content is written with clarity, depth and purpose —
+    not AI-generated noise, but real thoughts with real meaning.
+  </p>
+</section>
+
+<!-- WHY ME -->
+<section class="why">
+  <h2>Why RiseUnstoppable?</h2>
+  <div class="grid">
+    <div class="box">✔ Deep Research</div>
+    <div class="box">✔ Original Thoughts</div>
+    <div class="box">✔ Clear Language</div>
+    <div class="box">✔ Emotional Connection</div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div>
+    <h3 id="count1">0</h3>
+    <p>Articles Written</p>
+  </div>
+  <div>
+    <h3 id="count2">0</h3>
+    <p>Quotes Created</p>
+  </div>
+  <div>
+    <h3 id="count3">0</h3>
+    <p>Readers Inspired</p>
+  </div>
+</section>
+
+<!-- QUOTE BANNER -->
+<section class="quote">
+  <blockquote>
+    “Words have power. When written with truth, they change minds and lives.”
+  </blockquote>
+</section>
+
+<footer>
+  © 2025 RiseUnstoppable | Built with Purpose
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+[1:42 PM, 12/31/2025] SAURABH PATEL: body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover no-repeat;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.7);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+p {
+  max-width: 700px;
+  font-size: 1.2rem;
+}
+
+.btn-group {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.box {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background: #111;
+}
+
+.stats h3 {
+  font-size: 2.5rem;
+  color: #00ffcc;
+}
+
+.quote {
+  background: #000;
+  font-size: 1.4rem;
+  padding: 50px;
+  font-style: italic;
+}
+
+footer {
+  background: #000;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+.fade {
+  animation: fadeIn 1.5s ease;
+}
+.fade-delay {
+  animation: fadeIn 2.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
