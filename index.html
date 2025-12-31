@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+[2:17 PM, 12/31/2025] SAURABH PATEL: <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -23,11 +23,11 @@
   </nav>
 </header>
 
-<!-- HERO / FRONT PAGE -->
+<!-- HERO SECTION -->
 <section class="hero">
   <div class="overlay">
     <h2>Welcome to RiseUnstoppable</h2>
-    <p>Meaningful quotes, motivational content and inspiring articles</p>
+    <p>Meaningful quotes, motivational content, and inspiring articles</p>
   </div>
 </section>
 
@@ -53,3 +53,76 @@
 
 </body>
 </html>
+[2:17 PM, 12/31/2025] SAURABH PATEL: body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo h1 { margin: 0; font-size: 1.8rem; color: #00ffcc; }
+header .logo p { margin: 0; font-size: 0.9rem; color: #fff; }
+
+header nav a {
+  color: #00ffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+  background-attachment: fixed; /* Parallax effect */
+  display: flex;
+  justify-content: center;align-items: center;
+}
+
+.hero .overlay {
+  background: rgba(0,0,0,0.45);
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.hero h2 { font-size: 2.5rem; margin-bottom: 15px; }
+.hero p { font-size: 1.2rem; }
+
+/* QUOTES SECTION */
+.quotes {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.quote-card {
+  background: rgba(0,0,0,0.6);
+  padding: 25px;
+  margin: 20px 0;
+  border-left: 5px solid #00ffcc;
+  border-radius: 12px;
+  font-size: 1.1rem;
+}
+
+.quote-card i { font-style: italic; color: #ddd; }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
